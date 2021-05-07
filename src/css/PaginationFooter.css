@@ -1,0 +1,4 @@
+.ui.list:last-child {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}

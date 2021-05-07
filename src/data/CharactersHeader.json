@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Name"
+    },
+    {
+        "id": 2,
+        "name": "Species"
+    },
+    {
+        "id": 3,
+        "name": "Origin"
+    },
+    {
+        "id": 4,
+        "name": "Location"
+    },
+    {
+        "id": 5,
+        "name": "Actions"
+    }
+]
