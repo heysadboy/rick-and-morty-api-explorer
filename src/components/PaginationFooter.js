@@ -21,9 +21,9 @@ const PaginationFooter = ({ data, type, setPage, currentTotal }) => {
         <div className="ui middle aligned divided list">
             <div className="item">
                 <div className="right floated content">
-                    <div class="ui basic buttons">
-                        <button class="ui button" onClick={previousButton}><i class="left chevron icon"></i></button>
-                        <button class="ui button" onClick={nextButton}><i class="right chevron icon"></i></button>
+                    <div className="ui basic buttons">
+                        <button className="ui button" onClick={previousButton}><i className="left chevron icon"></i></button>
+                        <button className="ui button" onClick={nextButton}><i className="right chevron icon"></i></button>
                     </div>
                 </div>
                 <div className="content">Showing <strong>{fromNumber}</strong> - <strong>{toNumber}</strong> of <strong>{data.count}</strong> {type}</div>

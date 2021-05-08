@@ -5,18 +5,14 @@
     },
     {
         "id": 2,
-        "name": "Species"
+        "name": "Air Date"
     },
     {
         "id": 3,
-        "name": "Origin"
+        "name": "Episode"
     },
     {
         "id": 4,
-        "name": "Location"
-    },
-    {
-        "id": 5,
         "name": "Actions"
     }
 ]

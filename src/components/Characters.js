@@ -5,6 +5,7 @@ import Table from './Table';
 import Loader from './Loader';
 import ErrorStatus from './ErrorStatus';
 import charactersHeader from '../data/CharactersHeader.json';
+import { Link } from 'react-router-dom'
 
 const GET_CHARACTERS = gql`
 query GetCharacters($page: Int!) {
@@ -53,8 +54,6 @@ const Characters = () => {
     }
 
     if (error) {
-        console.log(error.message);
-        console.log(Object.keys(error))
         return (
             <div>
                 <ErrorStatus message={error.message} />
@@ -63,7 +62,6 @@ const Characters = () => {
     }
 
     if (!loading && !error) {
-        console.log(data.characters.info);
         const rows = data.characters.results.map(row => {
             return (
                 <tr key={row.id}>
@@ -71,7 +69,7 @@ const Characters = () => {
                     <td data-label="Species" className="three wide">{row.species}</td>
                     <td data-label="Origin" className="four wide">{row.origin.name}</td>
                     <td data-label="Location" className="four wide">{row.location.name}</td>
-                    <td data-label="Action" className="one wide"><button className="ui green basic button">View</button></td>
+                    <td data-label="Action" className="one wide"><Link className="ui green basic button" to={`/character/${row.id}`}>View</Link></td>
                 </tr>
             );
         });
