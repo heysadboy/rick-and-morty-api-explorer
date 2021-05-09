@@ -4,29 +4,13 @@ Find the app deployed here https://optimistic-hermann-6f246c.netlify.app/
 
 Continuos deployment is done using [Netlify](https://www.netlify.com/).
 
-## Details
-
-The app views are divided into 6 components.
-
-- Characters 
-- Character
-- Episodes
-- Episode
-- Locations
-- Location
-
-There are common components that are reused in these views
-
-- Table
-- PaginationFooter
-- ErrorStatus
-- Loader
+### Details
 
 Styling is done using [Semantic UI](https://semantic-ui.com/) and some custom CSS.
 
 This app uses [Apollo](https://www.apollographql.com/docs/) for GraphQL operations and [React Router](https://reactrouter.com/) library for navigation.
 
-## Running and Testing
+### Running and Testing
 
 You can use following commands.
 
