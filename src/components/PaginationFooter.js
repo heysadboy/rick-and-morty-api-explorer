@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../css/PaginationFooter.css'
 
-const PaginationFooter = ({ data, type, setPage, currentTotal }) => {
-    const [fromNumber, setFromNumber] = useState(0);
-    const [toNumber, setToNumber] = useState(1);
+const PaginationFooter = ({ data, type, setPage, start, end }) => {
 
     const previousButton = () => {
         if (data.prev != null) {
@@ -14,6 +12,7 @@ const PaginationFooter = ({ data, type, setPage, currentTotal }) => {
     const nextButton = () => {
         if (data.next != null) {
             setPage(data.next);
+
         }
     }
 
@@ -26,7 +25,7 @@ const PaginationFooter = ({ data, type, setPage, currentTotal }) => {
                         <button className="ui button" onClick={nextButton}><i className="right chevron icon"></i></button>
                     </div>
                 </div>
-                <div className="content">Showing <strong>{fromNumber}</strong> - <strong>{toNumber}</strong> of <strong>{data.count}</strong> {type}</div>
+                <div className="content">Showing <strong>{start}</strong> - <strong>{end}</strong> of <strong>{data.count}</strong> {type}</div>
             </div>
         </div>
     )
