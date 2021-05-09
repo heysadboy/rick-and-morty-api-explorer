@@ -40,7 +40,6 @@ const characterMock = {
 
 }
 
-
 it('Test Character', async () => {
     const component = TestRenderer.create(
         <MockedProvider mocks={[characterMock]} addTypename={false}>
