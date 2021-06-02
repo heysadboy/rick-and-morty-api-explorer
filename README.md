@@ -1,6 +1,6 @@
 # Rick and Morty API Explorer
 
-Find the app deployed here https://optimistic-hermann-6f246c.netlify.app/ 
+Find the app deployed [here](https://optimistic-hermann-6f246c.netlify.app/).
 
 Continuos deployment is done using [Netlify](https://www.netlify.com/).
 
